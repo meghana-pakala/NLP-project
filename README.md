@@ -1,5 +1,5 @@
 # Sentiment Signals: Analyzing Tweets for Emotional Patterns
-By Jacob Ambert, Meghana Pakala, & Katie Pegg
+By [Jacob Ambert](mailto:jaambert@gmail.com), [Meghana Pakala](mailto:megpakala13@gmail.com), & [Katie Pegg](mailto:kpegg916@gmail.com)
 ![photo of a Welcome to SXSW banner](https://github.com/meghana-pakala/NLP-project/blob/main/images/SXSW.jpg)
 We will take you into the world of digital communication, where every tweet, review, and online comment is a gold mine of insights waiting to be discovered through the latest advancements in data science and natural language processing.
 
@@ -41,7 +41,7 @@ Here is an example of a negative regarding a specific issue with a specific prod
 To prepare for moedling, we ran standard preprocessing procedures, such as lowering the case for all the letters & removing special characters & common filler words. Specific to tweets, we removed username mentions, any hyperlinks, & text referring to retweets.
 
 ## Models
-We went through a few different iterations of our models in our analysis. We looked at logistic regression, multinomial naive bayes, decision tree, & random forest models. The standout performers were a logistic regression for binary classification & a random forest for our multiclass model. Originally, the binary model was only about 34% accurate, but after some tuning, the accuracy increased to around 87% on the testing data. The multiclass model was initally perched around 64% accurate, but the score was increased to about 70% after some hyperparameter adjustments. The GridSearchCVs can be found in (this notebook)[https://github.com/meghana-pakala/NLP-project/blob/main/notebooks-2/exploring-data-KP.ipynb].
+We went through a few different iterations of our models in our analysis. We looked at logistic regression, multinomial naive bayes, decision tree, & random forest models. The standout performers were a logistic regression for binary classification & a random forest for our multiclass model. Originally, the binary model was only about 34% accurate, but after some tuning, the accuracy increased to around 87% on the testing data. The multiclass model was initally perched around 64% accurate, but the score was increased to about 70% after some hyperparameter adjustments. The GridSearchCVs can be found in [this notebook](https://github.com/meghana-pakala/NLP-project/blob/main/notebooks-2/exploring-data-KP.ipynb).
 
 ## Evaluation Metrics
 We used the accuracy score for our metrics since we wanted to decrease the amount of both false positives (customer likes the product when they do not) & false negatives (customer does not like product when they do) in our calculations.
