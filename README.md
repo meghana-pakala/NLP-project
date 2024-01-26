@@ -1,6 +1,8 @@
 # Sentiment Signals: Analyzing Tweets for Emotional Patterns
 By [Jacob Ambert](mailto:jaambert@gmail.com), [Meghana Pakala](mailto:megpakala13@gmail.com), & [Katie Pegg](mailto:kpegg916@gmail.com)
+
 ![photo of a Welcome to SXSW banner](https://github.com/meghana-pakala/NLP-project/blob/main/images/SXSW.jpg)
+
 We will take you into the world of digital communication, where every tweet, review, and online comment is a gold mine of insights waiting to be discovered through the latest advancements in data science and natural language processing.
 
 We will showcase how we have harnessed sophisticated technology to sift through thousands of tweets related to Apple and Google products, collected during the South by Southwest Festival, or SXSW, of 2013. Our focus is to predict customer sentiment towards these tech hubs, turning raw data into a coherent narrative of public opinion.
@@ -14,6 +16,7 @@ We will take you through our process of data cleaning, exploration, and model bu
 ### Overview
 Source: https://data.world/crowdflower/brands-and-product-emotions
 - Target: positive, negative, & neutral sentiment
+
 The data was sourced from CrowdFlower via Dataworld and the dataset includes over 9,000 tweets collected from the 2013 South by Southwest Festival in Austin, Texas.
 
 SXSW is an annual conglomeration of conferences and festivals centered around art, music, and new technology.
@@ -25,16 +28,21 @@ Given the tweets, human raters evaluated the perceived sentiment and rated it as
 After data cleaning, such as removing null and duplicate rows, we were left with about 8,000 tweets for analysis.
 
 This graph shows that most of the tweets were for no brand in particular. Apple had the next most related tweets with Google to follow.
+
 ![graph showing tweets by brand: mostly tweets for no brand in particular, then apple, then google](https://github.com/meghana-pakala/NLP-project/blob/main/images/tweets_brand.png)
 
 This graph is showing brand sentiment. We mostly see that neutral tweets were about no brand in particular. If there was a brand related to the tweet, it was typically a positive reponse for Apple & Google.
+
 ![graph showing brand sentiment: mostly neutral tweets, mostly positive for google & apple](https://github.com/meghana-pakala/NLP-project/blob/main/images/brand_sentiment.png)
+
 This is potentially something to analyze further.
 
 Here is an example of a tweet that was removed since it wasn't really classifiable because it was mostly special characters.
+
 ![example tweet of mostly special characters for removal](https://github.com/meghana-pakala/NLP-project/blob/main/images/example_spec_chars.png)
 
 Here is an example of a negative regarding a specific issue with a specific product: the iPhone battery.
+
 ![example of negative regarding specific issue: iPhone battery](https://github.com/meghana-pakala/NLP-project/blob/main/images/example_battery.png)
 
 ## Preprocessing
